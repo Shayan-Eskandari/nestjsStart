@@ -1,0 +1,36 @@
+{
+  "name": "starter-app-node-ts",
+  "version": "1.0.0",
+  "description": "A good way to start with a ready-to-develop node app written in Typescript",
+  "keywords": [
+    "node",
+    "starter",
+    "skeleton",
+    "typescript"
+  ],
+  "author": "gjdass",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjdass/starter-app-node-ts.git"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "dependencies": {
+    "config": "^3.1.0",
+    "cross-env": "^5.2.0",
+    "lodash": "^4.17.11",
+    "log4js": "^4.3.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "start": "cross-env nodemon dist/passwordCheck.js",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
